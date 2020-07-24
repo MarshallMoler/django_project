@@ -1,0 +1,142 @@
+INFO 2020-07-23 06:32:38,182 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-23 06:54:39,010 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-23 06:55:44,290 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-23 11:43:47,042 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-07-23 11:46:55,004 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-07-23 11:46:55,063 log 228 Bad Request: /carts/simple/
+WARNING 2020-07-23 11:46:55,063 basehttp 154 "GET /carts/simple/ HTTP/1.1" 400 67242
+ERROR 2020-07-23 11:46:58,505 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-07-23 11:46:58,554 log 228 Bad Request: /image_codes/e1680f8b-2720-4065-94bd-ae1bba09c664/
+WARNING 2020-07-23 11:46:58,555 basehttp 154 "GET /image_codes/e1680f8b-2720-4065-94bd-ae1bba09c664/ HTTP/1.1" 400 67519
+INFO 2020-07-23 11:55:10,119 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-07-23 11:55:16,379 log 228 Not Found: /image_codes/40164e61-893c-427e-8570-43caf32b6975/
+WARNING 2020-07-23 11:55:16,379 basehttp 154 "GET /image_codes/40164e61-893c-427e-8570-43caf32b6975/ HTTP/1.1" 404 2291
+WARNING 2020-07-23 11:55:39,068 log 228 Not Found: /usernames/af147857878/count/
+WARNING 2020-07-23 11:55:39,069 basehttp 154 "GET /usernames/af147857878/count/ HTTP/1.1" 404 2228
+INFO 2020-07-23 12:17:10,068 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-07-23 12:19:44,865 log 228 Not Found: /info/
+WARNING 2020-07-23 12:19:44,866 log 228 Not Found: /browse_histories/
+WARNING 2020-07-23 12:19:44,869 basehttp 154 "GET /info/ HTTP/1.1" 404 2352
+WARNING 2020-07-23 12:19:44,870 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 2388
+WARNING 2020-07-23 12:19:47,697 log 228 Not Found: /image_codes/08d4d033-c22f-4a4c-8de7-f25f05e4a2c4/
+WARNING 2020-07-23 12:19:47,698 basehttp 154 "GET /image_codes/08d4d033-c22f-4a4c-8de7-f25f05e4a2c4/ HTTP/1.1" 404 2484
+INFO 2020-07-23 12:20:04,878 basehttp 154 "GET /usernames/zhaodengchao1234/count/ HTTP/1.1" 200 39
+INFO 2020-07-23 12:20:43,301 basehttp 154 "GET /mobiles/18120803575/count/ HTTP/1.1" 200 41
+INFO 2020-07-23 12:21:47,630 autoreload 217 /home/ubuntu/Desktop/django_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2020-07-23 12:21:48,328 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-23 12:27:34,897 autoreload 217 /home/ubuntu/Desktop/django_project/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+INFO 2020-07-23 12:27:35,372 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-23 12:34:20,349 autoreload 217 /home/ubuntu/Desktop/django_project/meiduo_mall/meiduo_mall/apps/verifications/urls.py changed, reloading.
+INFO 2020-07-23 12:34:20,860 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-23 13:18:27,347 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-07-23 13:18:33,467 log 228 Internal Server Error: /image_codes/005c81db-c7ba-435b-8927-4cb7ec680ee3/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/django_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 13, in get
+    redis_conn = get_redis_connection('veryfiy_code')
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'veryfiy_code' in settings.CACHES
+ERROR 2020-07-23 13:18:33,468 basehttp 154 "GET /image_codes/005c81db-c7ba-435b-8927-4cb7ec680ee3/ HTTP/1.1" 500 93358
+ERROR 2020-07-23 13:18:34,673 log 228 Internal Server Error: /image_codes/16b4e9c1-8e51-49aa-a271-14b48a844c0e/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/django_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 13, in get
+    redis_conn = get_redis_connection('veryfiy_code')
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'veryfiy_code' in settings.CACHES
+ERROR 2020-07-23 13:18:34,674 basehttp 154 "GET /image_codes/16b4e9c1-8e51-49aa-a271-14b48a844c0e/ HTTP/1.1" 500 93360
+INFO 2020-07-23 13:20:31,388 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-07-23 13:20:39,441 log 228 Internal Server Error: /image_codes/3f42da9d-4e00-40b2-b922-53c42b36bd14/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/django_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 13, in get
+    redis_conn = get_redis_connection('veryfiy_code')
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'veryfiy_code' in settings.CACHES
+ERROR 2020-07-23 13:20:39,443 basehttp 154 "GET /image_codes/3f42da9d-4e00-40b2-b922-53c42b36bd14/ HTTP/1.1" 500 93360
+ERROR 2020-07-23 13:21:42,581 log 228 Internal Server Error: /image_codes/c01b53ed-5822-45c8-b580-9e8b01b65d58/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/django_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 13, in get
+    redis_conn = get_redis_connection('veryfiy_code')
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/home/ubuntu/.virtualenvs/meiduo_mall/lib/python3.6/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'veryfiy_code' in settings.CACHES
+ERROR 2020-07-23 13:21:42,582 basehttp 154 "GET /image_codes/c01b53ed-5822-45c8-b580-9e8b01b65d58/ HTTP/1.1" 500 93347
+INFO 2020-07-23 13:26:02,962 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-23 13:26:06,458 basehttp 154 "GET /image_codes/24ce2215-eca9-4d89-9aa6-fe81a9a9b040/ HTTP/1.1" 200 3045
+INFO 2020-07-24 07:27:38,752 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-24 07:28:31,303 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-07-24 07:28:39,443 log 228 Not Found: /
+WARNING 2020-07-24 07:28:39,443 basehttp 154 "GET / HTTP/1.1" 404 2844
+WARNING 2020-07-24 07:28:42,168 log 228 Not Found: /favicon.ico
+WARNING 2020-07-24 07:28:42,170 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2895
+INFO 2020-07-24 07:31:43,151 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-24 07:44:22,163 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-24 07:44:50,193 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-07-24 07:47:21,520 log 228 Not Found: /carts/simple/
+WARNING 2020-07-24 07:47:21,521 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 2907
+INFO 2020-07-24 07:47:25,975 basehttp 154 "GET /image_codes/325ab77c-c85e-419a-bef9-d7410b645eec/ HTTP/1.1" 200 2869
+INFO 2020-07-24 08:41:26,984 basehttp 154 "GET /usernames/usre123/count/ HTTP/1.1" 200 39
+INFO 2020-07-24 09:36:49,231 basehttp 154 "GET /mobiles/18120803575/count/ HTTP/1.1" 200 41
+INFO 2020-07-24 09:37:01,142 basehttp 154 "GET /image_codes/67324cb6-a7a6-4b1d-a47c-9cdc606ba0c6/ HTTP/1.1" 200 3296
+INFO 2020-07-24 09:37:05,599 basehttp 154 "GET /image_codes/ffb055c9-d701-406c-b71d-c764efb89766/ HTTP/1.1" 200 2869
+INFO 2020-07-24 09:37:06,932 basehttp 154 "GET /image_codes/b06ba42e-b06c-47ca-8910-267340dc3930/ HTTP/1.1" 200 3124
+INFO 2020-07-24 09:37:11,018 basehttp 154 "GET /image_codes/14475998-d29a-4ea2-9f5f-dd2e9854d80e/ HTTP/1.1" 200 3373
+INFO 2020-07-24 09:37:12,385 basehttp 154 "GET /image_codes/bf47a2a7-7c00-4b1a-8b3f-2e7588b237b4/ HTTP/1.1" 200 3401
+INFO 2020-07-24 09:37:22,761 basehttp 154 "GET /image_codes/24be17c6-bb48-44e1-ad8e-abb753faad95/ HTTP/1.1" 200 2690
+INFO 2020-07-24 09:37:23,312 basehttp 154 "GET /image_codes/1c813dee-064b-4fb1-971e-28ecb2de9164/ HTTP/1.1" 200 3415
+INFO 2020-07-24 09:37:23,707 basehttp 154 "GET /image_codes/ea7d0e99-3cdc-454d-bff2-6b31a9e8be08/ HTTP/1.1" 200 3485
+INFO 2020-07-24 09:37:24,205 basehttp 154 "GET /image_codes/385a2593-d7f5-4efa-9b3a-211823216bc0/ HTTP/1.1" 200 3470
+INFO 2020-07-24 09:37:24,856 basehttp 154 "GET /image_codes/a398faae-977e-432b-8ca2-f07b897f09a7/ HTTP/1.1" 200 3202
+INFO 2020-07-24 09:37:25,388 basehttp 154 "GET /image_codes/f58d024d-b1df-40df-b3d8-1d22348c589d/ HTTP/1.1" 200 3444
+INFO 2020-07-24 09:37:26,396 basehttp 154 "GET /image_codes/141261b0-800e-470f-88c3-77507a45fa03/ HTTP/1.1" 200 3348
+WARNING 2020-07-24 10:20:44,367 log 228 Not Found: /carts/simple/
+WARNING 2020-07-24 10:20:44,369 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 2907
