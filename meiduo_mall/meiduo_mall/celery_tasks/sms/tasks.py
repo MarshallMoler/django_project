@@ -1,5 +1,5 @@
 from meiduo_mall.celery_tasks.main import celery_app
-from meiduo_mall.libs.yuntongxun.ccp_sms import CCP
+from meiduo_mall.celery_tasks.yuntongxun.ccp_sms import CCP
 
 
 @celery_app.task(name='ccp_send_sms_code')

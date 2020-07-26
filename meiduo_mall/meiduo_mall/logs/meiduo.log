@@ -159,3 +159,36 @@ WARNING 2020-07-26 06:22:33,956 log 228 Forbidden (CSRF cookie not set.): /regis
 WARNING 2020-07-26 06:22:33,957 basehttp 154 "POST /register/ HTTP/1.1" 403 2868
 INFO 2020-07-26 06:22:33,960 basehttp 154 "GET /mobiles/18120803575/count/ HTTP/1.1" 200 41
 INFO 2020-07-26 06:22:33,963 basehttp 154 "GET /usernames/zhaodengchao/count/ HTTP/1.1" 200 39
+INFO 2020-07-26 07:39:49,382 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-26 07:39:53,580 basehttp 154 "GET /image_codes/e64a5e77-3abf-4772-85ad-565028a550ac/ HTTP/1.1" 200 3276
+INFO 2020-07-26 08:45:44,950 basehttp 154 "GET /image_codes/ea4a64cc-21fd-4fcb-872c-2cd9c1b8873e/ HTTP/1.1" 200 3215
+INFO 2020-07-26 08:45:48,829 basehttp 154 "GET /usernames/zhaodengchao/count/ HTTP/1.1" 200 39
+INFO 2020-07-26 08:46:02,270 basehttp 154 "GET /mobiles/18120803575/count/ HTTP/1.1" 200 41
+INFO 2020-07-26 08:46:12,083 basehttp 154 "GET /sms_codes/18120803575/?image_code=vopm&image_code_id=ea4a64cc-21fd-4fcb-872c-2cd9c1b8873e HTTP/1.1" 200 81
+INFO 2020-07-26 08:46:12,084 basehttp 154 "GET /mobiles/18120803575/count/ HTTP/1.1" 200 41
+INFO 2020-07-26 08:59:05,881 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-26 08:59:13,548 basehttp 154 "GET /image_codes/cfe9189c-25f4-4c6a-8d1a-db74d392600e/ HTTP/1.1" 200 3316
+INFO 2020-07-26 08:59:23,475 views 84 496849
+INFO 2020-07-26 08:59:23,481 basehttp 154 "GET /mobiles/18120803575/count/ HTTP/1.1" 200 41
+INFO 2020-07-26 08:59:23,698 basehttp 154 "GET /sms_codes/18120803575/?image_code=JLC6&image_code_id=cfe9189c-25f4-4c6a-8d1a-db74d392600e HTTP/1.1" 200 61
+INFO 2020-07-26 08:59:52,424 basehttp 154 "GET /mobiles/18120803575/count/ HTTP/1.1" 200 41
+INFO 2020-07-26 08:59:52,426 basehttp 154 "GET /usernames/zhaodengchao/count/ HTTP/1.1" 200 39
+INFO 2020-07-26 08:59:52,437 basehttp 154 "OPTIONS /register/ HTTP/1.1" 200 0
+WARNING 2020-07-26 08:59:52,448 log 228 Forbidden (CSRF cookie not set.): /register/
+WARNING 2020-07-26 08:59:52,448 basehttp 154 "POST /register/ HTTP/1.1" 403 2868
+INFO 2020-07-26 09:00:47,782 autoreload 217 /home/ubuntu/Desktop/django_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2020-07-26 09:00:48,593 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-26 11:23:30,809 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-26 11:28:25,295 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-26 11:30:32,726 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-26 11:30:38,035 basehttp 154 "GET /image_codes/ae2cfb9b-3567-42ed-83ab-af5dce40e897/ HTTP/1.1" 200 3143
+INFO 2020-07-26 11:30:41,854 basehttp 154 "GET /usernames/zhaodengchao/count/ HTTP/1.1" 200 39
+INFO 2020-07-26 11:30:54,903 basehttp 154 "GET /mobiles/18120803575/count/ HTTP/1.1" 200 41
+INFO 2020-07-26 11:31:06,043 views 84 269844
+INFO 2020-07-26 11:31:06,046 basehttp 154 "GET /mobiles/18120803575/count/ HTTP/1.1" 200 41
+INFO 2020-07-26 11:31:06,239 basehttp 154 "GET /sms_codes/18120803575/?image_code=DJ9H&image_code_id=ae2cfb9b-3567-42ed-83ab-af5dce40e897 HTTP/1.1" 200 61
+INFO 2020-07-26 11:31:26,980 basehttp 154 "GET /usernames/zhaodengchao/count/ HTTP/1.1" 200 39
+INFO 2020-07-26 11:31:26,984 basehttp 154 "OPTIONS /register/ HTTP/1.1" 200 0
+INFO 2020-07-26 11:31:26,994 basehttp 154 "GET /mobiles/18120803575/count/ HTTP/1.1" 200 41
+WARNING 2020-07-26 11:31:27,015 log 228 Forbidden (CSRF cookie not set.): /register/
+WARNING 2020-07-26 11:31:27,015 basehttp 154 "POST /register/ HTTP/1.1" 403 2868

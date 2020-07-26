@@ -7,6 +7,7 @@ from django.views import View
 from django.http import HttpResponse, JsonResponse
 from django_redis import get_redis_connection
 from meiduo_mall.libs.captcha.captcha import captcha
+from meiduo_mall.celery_tasks.sms.tasks import ccp_send_sms_code
 from meiduo_mall.libs.yuntongxun.ccp_sms import CCP
 # Create your views here.
 from users.models import User
@@ -61,12 +62,16 @@ class SMSCodeView(View):
         sms_code = "%06d"%random.randint(0,999999)
         logger.info(sms_code)
 
-        redis_conn.setex('send_flag_%s'%mobile,60,1)
+        pl = redis_conn.pipeline()
 
-        redis_conn.setex('sms_%s'%mobile,300,sms_code)
+        pl.setex('send_flag_%s'%mobile,60,1)
 
-        CCP().send_template_sms(mobile,[sms_code,5],1)
+        pl.setex('sms_%s'%mobile,300,sms_code)
 
+        pl.excute()
+
+        # CCP().send_template_sms(mobile,[sms_code,5],1)
+        ccp_send_sms_code.delay(mobile, sms_code)
 
         return JsonResponse({"code":0,"errmsg":"短信发送成功"})
 
