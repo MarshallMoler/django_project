@@ -140,3 +140,22 @@ INFO 2020-07-24 09:37:25,388 basehttp 154 "GET /image_codes/f58d024d-b1df-40df-b
 INFO 2020-07-24 09:37:26,396 basehttp 154 "GET /image_codes/141261b0-800e-470f-88c3-77507a45fa03/ HTTP/1.1" 200 3348
 WARNING 2020-07-24 10:20:44,367 log 228 Not Found: /carts/simple/
 WARNING 2020-07-24 10:20:44,369 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 2907
+INFO 2020-07-26 06:17:56,562 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-26 06:19:54,607 autoreload 217 /home/ubuntu/Desktop/django_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2020-07-26 06:19:55,022 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-26 06:21:22,994 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-26 06:21:30,060 basehttp 154 "GET /image_codes/ee99843e-3c58-4c87-af64-9010fdae65d0/ HTTP/1.1" 200 3419
+INFO 2020-07-26 06:21:37,504 basehttp 154 "GET /usernames/zhaodengchao/count/ HTTP/1.1" 200 39
+INFO 2020-07-26 06:21:54,416 basehttp 154 "GET /mobiles/18120803575/count/ HTTP/1.1" 200 41
+INFO 2020-07-26 06:22:05,830 views 84 810416
+INFO 2020-07-26 06:22:05,836 basehttp 154 "GET /mobiles/18120803575/count/ HTTP/1.1" 200 41
+INFO 2020-07-26 06:22:06,024 basehttp 154 "GET /sms_codes/18120803575/?image_code=BZHF&image_code_id=ee99843e-3c58-4c87-af64-9010fdae65d0 HTTP/1.1" 200 61
+INFO 2020-07-26 06:22:26,930 basehttp 154 "GET /mobiles/18120803575/count/ HTTP/1.1" 200 41
+INFO 2020-07-26 06:22:26,932 basehttp 154 "GET /usernames/zhaodengchao/count/ HTTP/1.1" 200 39
+INFO 2020-07-26 06:22:26,952 basehttp 154 "OPTIONS /register/ HTTP/1.1" 200 0
+WARNING 2020-07-26 06:22:26,971 log 228 Forbidden (CSRF cookie not set.): /register/
+WARNING 2020-07-26 06:22:26,971 basehttp 154 "POST /register/ HTTP/1.1" 403 2868
+WARNING 2020-07-26 06:22:33,956 log 228 Forbidden (CSRF cookie not set.): /register/
+WARNING 2020-07-26 06:22:33,957 basehttp 154 "POST /register/ HTTP/1.1" 403 2868
+INFO 2020-07-26 06:22:33,960 basehttp 154 "GET /mobiles/18120803575/count/ HTTP/1.1" 200 41
+INFO 2020-07-26 06:22:33,963 basehttp 154 "GET /usernames/zhaodengchao/count/ HTTP/1.1" 200 39

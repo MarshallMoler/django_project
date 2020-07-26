@@ -10,7 +10,9 @@ from django.views import View
 from django_redis import get_redis_connection
 from meiduo_mall.libs.yuntongxun.ccp_sms import CCP
 from users.models import User
+from django.contrib.auth import login,logout,authenticate
 # Create your views here.
+
 
 class UsernameCountView(View):
 
@@ -150,7 +152,82 @@ class RegisterView(View):
         except Exception:
             return JsonResponse({"code":400,"errmsg":"写入失败"})
 
-        return JsonResponse({"code":200,"errmsg":"注册成功"})
+
+        login(request, user)
+        response = JsonResponse({'code': 0,'errmsg': 'ok'})
+
+        # 在响应对象中设置用户名信息.
+        # 将用户名写入到 cookie，有效期 14 天
+        response.set_cookie('username',user.username,max_age=3600 * 24 * 14)
+        # 返回响应结果
+        return response
+
+
+class LoginView(View):
+
+
+    def post(self,request):
+        '''实现接口登录'''
+        dict = json.loads(request.body)
+
+        username = dict.get("username")
+        password = dict.get("password")
+        remember = dict.get("remember")
+
+
+        if not all([username,password]):
+            return JsonResponse({"code":400,"errmsg":"缺少必要参数"})
+
+        user = authenticate(username=username,password=password)
+
+        if user is None:
+            return JsonResponse({"code":400,"errmsg":"用户名或密码错误"})
+
+        login(request,user)
+
+        if remember != True:
+            request.session.set_expiry(0)
+        else:
+            request.session.set_expiry(None)
+
+        # 生成响应对象
+        response = JsonResponse({'code': 0,
+                                 'errmsg': 'ok'})
+
+        # 在响应对象中设置用户名信息.
+        # 将用户名写入到 cookie，有效期 14 天
+        response.set_cookie('username',
+                            user.username,
+                            max_age=3600 * 24 * 14)
+
+        # 返回响应结果
+        return response
+
+
+class LogoutView(View):
+    '''定义退出登录的接口'''
+    def delete(self,request):
+        '''实现退出登录'''
+        logout(request)
+
+        response=JsonResponse({"code":0,"errmsg":"ok"})
+
+        response.delete_cookie('username')
+
+        return response
+
+
+class UserInfoView(View):
+    '''用户中心'''
+    def get(self,request):
+
+
+        return JsonResponse({"code":0,"errmsg":"ok"})
+
+        # if request.user.is_authenticated:
+        #
+        # else:
+        #     class LogoutView(View):
 
 
 
